@@ -1,5 +1,7 @@
 name: Test Windows exe
-on: workflow_dispatch
+on:
+  push:
+    branches: [test-build/windows-exe]
 jobs:
   build:
     runs-on: windows-latest
